@@ -15,7 +15,7 @@ const userRouter = require('./routes/user.route');
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(cors({
-    origin: 'https://todo-app01-01.netlify.app/',
+    origin: 'https://todo-app01-01.netlify.app',
     credentials: true
 }));
 
