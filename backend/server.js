@@ -19,7 +19,9 @@ app.use(cors());
 app.use('/api/todos', todoRouter);
 app.use('/api/user', userRouter);
 
-
+app.get('/',(req,res) => {
+    res.send("this is homempage!")
+})
 
 app.listen(PORT, () => {
     connectDB();
