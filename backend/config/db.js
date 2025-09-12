@@ -1,10 +1,10 @@
 const mongoose = require("mongoose");
 
-const DB_URl = process.env.DB_URl;
+const DB_URL = process.env.DB_URL;
 
 exports.connectDB = async() => {
     try{
-        await mongoose.connect(DB_URl);
+        await mongoose.connect(DB_URL);
         console.log("Database connected successfully");
 
     }catch(error){
