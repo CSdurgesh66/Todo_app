@@ -14,7 +14,10 @@ const userRouter = require('./routes/user.route');
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
-app.use(cors());
+app.use(cors({
+  origin: '*', // allows all origins temporarily
+  credentials: true
+}));
 
 app.use('/api/todos', todoRouter);
 app.use('/api/user', userRouter);
