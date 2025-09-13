@@ -28,5 +28,5 @@ app.get('/',(req,res) => {
 
 app.listen(PORT, () => {
     connectDB();
-    console.log("server is running on 5000");
+    console.log(`server is running on ${PORt}`);
 })
