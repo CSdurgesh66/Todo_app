@@ -28,5 +28,5 @@ app.get('/',(req,res) => {
 
 app.listen(PORT, () => {
     connectDB();
-    console.log(`server is running on ${PORt}`);
+    console.log(`server is running on ${PORT}`);
 })
