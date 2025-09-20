@@ -19,8 +19,8 @@ app.use(cors({
     credentials: true
 }));
 
-app.use('/api/todos', todoRouter);
-app.use('/api/user', userRouter);
+app.use('/todos', todoRouter);
+app.use('/user', userRouter);
 
 app.get('/',(req,res) => {
     res.send("this is homempage!")
