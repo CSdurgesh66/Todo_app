@@ -4,6 +4,7 @@ const DB_URL = process.env.DB_URL;
 
 exports.connectDB = async() => {
     try{
+        console.log("enter in db");
         await mongoose.connect(DB_URL);
         console.log("Database connected successfully");
 
